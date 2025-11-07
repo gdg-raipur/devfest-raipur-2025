@@ -70,7 +70,7 @@ export default function Navbar() {
           onClick={toggleMobileMenu}
           className={`p-3 rounded-full transition-all duration-300 ${
             isScrolled || isMobileMenuOpen
-              ? 'bg-white/90 backdrop-blur-safari shadow-2xl'
+              ? 'bg-slate-900/95 backdrop-blur-safari shadow-2xl'
               : 'bg-slate-900/95 backdrop-blur-safari shadow-lg'
           } text-white`}
           aria-label="Toggle menu"
