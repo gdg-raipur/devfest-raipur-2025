@@ -4,14 +4,16 @@ import Image from 'next/image';
 import Button from './Button';
 import { ArrowRightCircle, CalendarIcon, LocateIcon } from 'lucide-react';
 import Link from 'next/link';
+import NavBar from './Navbar';
 
-const SPONSORS = [
-   {alt: 'Sponsor 1', src: '/images/sponsor1.png'},
-   {alt: 'Sponsor 2', src: '/images/sponsor2.png'},
-   {alt: 'Sponsor 3', src: '/images/sponsor3.png'},
-   {alt: 'Sponsor 4', src: '/images/sponsor4.png'},
+// Dummy data for sponsors
+// const SPONSORS = [
+//    {alt: 'Sponsor 1', src: '/images/sponsor1.png'},
+//    {alt: 'Sponsor 2', src: '/images/sponsor2.png'},
+//    {alt: 'Sponsor 3', src: '/images/sponsor3.png'},
+//    {alt: 'Sponsor 4', src: '/images/sponsor4.png'},
 
-]
+// ]
 
 export default function Hero() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -24,7 +26,8 @@ export default function Hero() {
 
 return (
   <>
-  <div className='relative overflow-hidden'>
+
+  <div className='relative w-full overflow-x-hidden'>
     <section
       className="relative w-full h-[90vh] sm:h-screen bg-white overflow-hidden"
     >
@@ -340,7 +343,8 @@ return (
         </div>
 
         {/** Sponsor Logos Grid (responsive placeholders) */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 items-center justify-center mt-6">
             {SPONSORS.map((sponsor, index) => (
               <div key={index} className="bg-amber-50 h-16 sm:h-20 rounded-md flex items-center justify-center">
@@ -353,7 +357,7 @@ return (
             ))}
             
           </div>
-        </div>
+        </div> */}
 
         {/** Bottom GDG logo - responsive positioned */}
         <div className="relative w-full overflow-visible mt-12">
