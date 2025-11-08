@@ -8,9 +8,9 @@ import Image from "next/image";
 const NAV_ITEMS = [
     { label: "Home", href: "/" },
     { label: "Speakers", href: "/speakers" },
-    { label: "Sponsors", href: "/sponsors" },
+    // { label: "Sponsors", href: "/sponsors" },
     { label: "Team", href: "/team" },
-    { label: "FAQ", href: "/faq" },
+    { label: "Hackathon", href: "/hackathon" },
 ]
 
 export default function Navbar() {
@@ -39,7 +39,7 @@ export default function Navbar() {
       sizes="4" 
       height={40} 
       width={100}
-      className="w-[200px] h-[60px] mt-6 mx-6 md:h-[60px] md:w-[200px]"/>
+      className="w-[200px] fixed z-50 h-[60px] mt-6 mx-6 md:h-[60px] md:w-[200px]"/>
       <nav
         className={`fixed z-50 top-4 left-1/2  -translate-x-1/2 transition-all duration-300 ease-in-out hidden lg:flex ${
           isScrolled

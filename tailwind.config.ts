@@ -17,7 +17,10 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        sans: ['BR-Firma'],
+        // default sans stack used by `font-sans`
+        sans: ['BR-Firma', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
+        // custom utility `font-ethno` to use the Ethnocentric display face
+        ethno: ['Ethnocentric', 'BR-Firma', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       animation: {
         'bounce-slow': 'bounce 3s infinite',

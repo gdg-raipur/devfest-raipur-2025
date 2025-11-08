@@ -4,6 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --font-ethno: 'Ethnocentric', sans-serif;
+  --font-BR-Firma: 'BR-Firma', sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-BR-Firma);
@@ -115,16 +117,36 @@
 
 
 @layer base {
+  /* Register BR-Firma with multiple fallbacks (woff2, woff, opentype) and use font-display for better UX */
+  @font-face {
+    font-family: "BR-Firma";
+    /* Use the actual file present in public/fonts (BRFirma-Regular.woff2) to avoid 404s */
+    src: url("/fonts/BRFirma-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
   @font-face {
   font-family: "BR-Firma";
-  src: url("/fonts/BR-Firma-Regular.woff2") format("woff2");
-  font-weight: 400;
+  src: url("/fonts/BRFirma-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
-}
+  font-display: swap;
+  }
+  @font-face {
+    font-family: "Ethnocentric";
+    src: url("/fonts/Ethnocentric.otf") format("otf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+ 
+
   * {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    /* Use Tailwind's font-sans which we configured to start with BR-Firma */
+    @apply font-sans bg-background text-foreground;
   }
 }

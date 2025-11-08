@@ -13,16 +13,17 @@ const TEAM = [
 export default function TeamPageContent() {
     return (
         <div className="relative w-full overflow-x-hidden">
-            <div className="relative bg-[#34A853] flex flex-col justify-between overflow-vissible h-[90vh]">
+            <div className="relative bg-[#34A853] flex flex-col justify-between overflow-visible h-[90vh]">
                 <div
-      className="absolute top-0 left-0 w-full z-10 h-10 sm:h-12"
-      style={{
-        backgroundImage: "url('/images/team-border.svg')",
-        backgroundRepeat: "repeat-x",
-        backgroundSize: "auto 40%",
-      }}
-      aria-hidden="true"
-    />
+                 className="absolute top-0 left-0 w-full z-10 h-10 sm:h-12"
+                    style={{
+                        backgroundImage: "url('/images/team-border.svg')",
+                        backgroundRepeat: "repeat-x",
+                        backgroundSize: "auto 40%",
+                    }}
+                    aria-hidden="true"
+                />
+      
                 <div className="flex-1 flex flex-col md:flex-row items-center justify-center px-4 md:px-24 gap-4 md:gap-8 min-h-0 py-8 md:py-0">
                     <div className="flex flex-col items-center md:items-start w-full md:pl-12 max-w-4xl text-center md:text-left">
                         <div className="flex flex-row justify-center md:justify-start w-full">
