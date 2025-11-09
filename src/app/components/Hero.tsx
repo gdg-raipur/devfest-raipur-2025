@@ -59,7 +59,7 @@ return (
 
         <div className="flex flex-col sm:flex-row items-center gap-3 mt-4 sm:mt-6">
           <Link
-            href={process.env.NEXT_PUBLIC_BADGE_URL || '#'}
+            href="https://konfhub.com/devfest-raipur-2025?utm_source=website&utm_medium=cta&utm_campaign=devfest-raipur-2025&utm_content=hero-badge"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex w-full sm:w-auto justify-center items-center font-semibold rounded-full transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer group border-2 border-green-950 px-4 py-2 hover:shadow-xl bg-[#34A853] text-white shadow-lg text-base gap-2"
@@ -67,18 +67,6 @@ return (
             Get Your Badge
             <ArrowRightCircle />
           </Link>
-
-          <Button
-            size="lg"
-            className="w-full sm:w-auto px-4 py-2"
-            variant="outline"
-            onClick={() => {
-              window.location.href = process.env.NEXT_PUBLIC_TICKETS_URL || '#';
-            }}
-          >
-            Ticket
-            <ArrowRightCircle />
-          </Button>
         </div>
       </div>
 
@@ -156,7 +144,7 @@ return (
             </div>
 
             <Link
-              href={process.env.NEXT_PUBLIC_TICKETS_URL || "#"}
+              href="https://konfhub.com/devfest-raipur-2025?utm_source=website&utm_medium=cta&utm_campaign=devfest-raipur-2025&utm_content=hero-ticket"
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-full items-center justify-center whitespace-nowrap rounded-full bg-[#34A853] text-white font-semibold px-4 py-2 text-sm sm:text-base shadow-lg hover:shadow-xl transition"

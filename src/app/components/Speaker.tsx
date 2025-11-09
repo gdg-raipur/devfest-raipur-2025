@@ -2,19 +2,10 @@
 import { CalendarIcon, LocateIcon } from "lucide-react"
 import Image from "next/image"
 import Navbar from "./Navbar"
+import eventData from "@/data/event.json"
 
-// Dummy data for speakers
-
-const SPEAKERS = [
-    { name: "Jane Doe", title: "Senior Developer Advocate at TechCorp", src: "/images/speakers/jane_doe.jpg", alt: "Jane Doe" },
-    // { name: "John Smith", title: "Engineering Lead, OpenSource Co.", src: "/images/speakers/john_smith.jpg", alt: "John Smith" },
-    // { name: "Alice Patel", title: "CTO, StartupX", src: "/images/speakers/alice_patel.jpg", alt: "Alice Patel" },
-    // { name: "Bob Kumar", title: "ML Researcher, UniLab", src: "/images/speakers/bob_kumar.jpg", alt: "Bob Kumar" },
-    // { name: "Maria Garcia", title: "Full Stack Engineer, WebWorks", src: "/images/speakers/maria_garcia.jpg", alt: "Maria Garcia" },
-    // { name: "Liam Chen", title: "DevOps Specialist, CloudNet", src: "/images/speakers/liam_chen.jpg", alt: "Liam Chen" },
-    // { name: "Sofia Rossi", title: "UI/UX Designer, Creative Minds", src: "/images/speakers/sofia_rossi.jpg", alt: "Sofia Rossi" },
-    // { name: "David Kim", title: "Data Scientist, AnalyticsPro", src: "/images/speakers/david_kim.jpg", alt: "David Kim" },
-]
+const SPEAKERS = eventData.speakers
+const MENTORS = eventData.mentors
 
 export default function SpeakersPageContent() {
     return (
@@ -76,16 +67,50 @@ export default function SpeakersPageContent() {
     />
                 </div>
 
+                {/* Mentors Section */}
+                <section className="relative bg-white h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center text-[#205c4b]">Mentors</h2>
+
+                    <p className="text-center text-sm sm:text-base text-gray-700 mt-2 max-w-2xl mx-auto">Meet our mentors: experienced professionals guiding and supporting our community.</p>
+
+                    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        {MENTORS.map((m) => (
+                            <div key={m.id} className="bg-white rounded-lg shadow p-4 flex flex-col items-center text-center">
+                                <div className="w-28 h-28 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+                                    <Image
+                                        src={m.image}
+                                        alt={m.name}
+                                        width={280}
+                                        height={280}
+                                        className="w-full h-full object-cover"
+                                        unoptimized
+                                    />
+                                </div>
+                                <h3 className="mt-4 text-lg font-semibold text-gray-900">{m.name}</h3>
+                                <p className="mt-1 text-sm text-gray-600">{m.title}</p>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                {/* Speakers Section */}
                 <section className="relative bg-white h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                     <h2 className="text-2xl sm:text-3xl font-bold text-center text-[#205c4b]">Speakers</h2>
 
                     <p className="text-center text-sm sm:text-base text-gray-700 mt-2 max-w-2xl mx-auto">Meet our speakers: industry leaders, open source contributors and community builders.</p>
 
                     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                        {SPEAKERS.map((s, idx) => (
-                            <div key={idx} className="bg-white rounded-lg shadow p-4 flex flex-col items-center text-center">
-                                <div className="w-28 h-28 rounded-full overflow-hidden">
-                                    <Image src={s.src} alt={s.alt} width={280} height={280} className="w-full h-full object-cover" />
+                        {SPEAKERS.map((s) => (
+                            <div key={s.id} className="bg-white rounded-lg shadow p-4 flex flex-col items-center text-center">
+                                <div className="w-28 h-28 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+                                    <Image
+                                        src={s.image}
+                                        alt={s.name}
+                                        width={280}
+                                        height={280}
+                                        className="w-full h-full object-cover"
+                                        unoptimized
+                                    />
                                 </div>
                                 <h3 className="mt-4 text-lg font-semibold text-gray-900">{s.name}</h3>
                                 <p className="mt-1 text-sm text-gray-600">{s.title}</p>

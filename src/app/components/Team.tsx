@@ -2,13 +2,9 @@
 import { CalendarIcon, LocateIcon } from "lucide-react"
 import Image from "next/image";
 import Link from "next/link";
+import eventData from "@/data/event.json"
 
-const TEAM = [
-    { name: "Jane Doe", title: "Design", src: "/images/team/jane_doe.jpg", alt: "Jane Doe" },
-    { name: "John Smith", title: "Volunteer", src: "/images/team/john_smith.jpg", alt: "John Smith" },
-    { name: "Alice Patel", title: "Venue Manager", src: "/images/team/alice_patel.jpg", alt: "Alice Patel" },
-    { name: "Bob Kumar", title: "Marketing", src: "/images/team/bob_kumar.jpg", alt: "Bob Kumar" },
-]
+const TEAM = eventData.team
 
 export default function TeamPageContent() {
     return (
@@ -93,13 +89,13 @@ export default function TeamPageContent() {
                                     <p className="text-center text-sm sm:text-base text-gray-700 mt-2 max-w-2xl mx-auto">Meet our team: dedicated individuals driving innovation and collaboration.</p>
 
                                     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                                        {TEAM.map((s, idx) => (
-                                            <div key={idx} className="bg-white rounded-lg shadow p-4 flex flex-col items-center text-center">
+                                        {TEAM.map((s) => (
+                                            <div key={s.id} className="bg-white rounded-lg shadow p-4 flex flex-col items-center text-center">
                                                 <div className="w-28 h-28 rounded-full overflow-hidden">
-                                                    <Image src={s.src} alt={s.alt} width={280} height={280} className="w-full h-full object-cover" />
+                                                    <Image src={s.image} alt={s.name} width={280} height={280} className="w-full h-full object-cover" />
                                                 </div>
                                                 <h3 className="mt-4 text-lg font-semibold text-gray-900">{s.name}</h3>
-                                                <p className="mt-1 text-sm text-gray-600">{s.title}</p>
+                                                <p className="mt-1 text-sm text-gray-600">{s.role}</p>
                                             </div>
                                         ))}
                                     </div>
