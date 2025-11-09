@@ -7,10 +7,10 @@ import Image from "next/image";
 
 const NAV_ITEMS = [
     { label: "Home", href: "/" },
-    { label: "Speakers", href: "/speaker" },
-    { label: "Sponsors", href: "/sponsors" },
+    { label: "Speakers", href: "/speakers" },
+    // { label: "Sponsors", href: "/sponsors" },
     { label: "Team", href: "/team" },
-    { label: "FAQ", href: "/faq" },
+    { label: "Hackathon", href: "/hackathon" },
 ]
 
 export default function Navbar() {
@@ -39,12 +39,12 @@ export default function Navbar() {
       sizes="4" 
       height={40} 
       width={100}
-      className="w-[200px] h-[60px] mt-6 mx-6 md:h-[60px] md:w-[200px]"/>
+      className="w-[200px] fixed z-50 h-[60px] mt-6 mx-6 md:h-[60px] md:w-[200px]"/>
       <nav
-        className={`fixed top-4 left-1/2  -translate-x-1/2 transition-all duration-300 ease-in-out hidden lg:flex ${
+        className={`fixed z-50 top-4 left-1/2  -translate-x-1/2 transition-all duration-300 ease-in-out hidden lg:flex ${
           isScrolled
-            ? 'bg-white-300/90 backdrop-blur-safari shadow-2xl'
-            : 'bg-white-300/95 backdrop-blur-safari shadow-lg'
+            ? 'bg-white backdrop-blur-safari shadow-2xl'
+            : 'bg-white backdrop-blur-safari shadow-lg'
         } text-black rounded-full px-6 xl:px-8 py-3 gap-6 xl:gap-8 items-center`}
         style={{ minWidth: 'fit-content', maxWidth: '90vw' }}
       >

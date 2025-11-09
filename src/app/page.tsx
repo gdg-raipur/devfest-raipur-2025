@@ -1,9 +1,10 @@
-import Button from "./components/Button";
 import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <main className="flex ">
+    <main className="relative">
+      <Navbar />
      <Hero />
     </main>
   );
