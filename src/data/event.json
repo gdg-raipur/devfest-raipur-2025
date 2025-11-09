@@ -1,0 +1,378 @@
+{
+  "event": {
+    "name": "DevFest Raipur 2025",
+    "tagline": "Join the Celebration of the Google Developer Group",
+    "date": "Saturday, November 15, 2025",
+    "location": "International Institute of Information Technology, Naya Raipur",
+    "description": "DevFest Raipur 2025 is the largest developer festival organized by Google Developer Groups, bringing together developers, tech enthusiasts, and industry leaders for a day of learning, networking, and innovation.",
+    "contact": {
+      "email": "kuldeep@gdgraipur.in",
+      "phone": "+91 798 716 2852"
+    },
+    "social": {
+      "twitter": "https://twitter.com/gdgraipur",
+      "instagram": "https://instagram.com/gdgraipur",
+      "linkedin": "https://www.linkedin.com/company/gdg-raipur/"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "DevFest Raipur 2025 | November 15 | IIIT Naya Raipur",
+      "description": "Join DevFest Raipur 2025 on November 15 at IIIT Naya Raipur. Connect with industry leaders, attend workshops, and celebrate innovation with the Google Developer Group community.",
+      "keywords": "DevFest, DevFest Raipur, DevFest 2025, GDG Raipur, Google Developer Group, Tech Conference, Developer Event, IIIT Raipur",
+      "ogImage": "/images/og-home.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    "speakers": {
+      "title": "Speakers - DevFest Raipur 2025",
+      "description": "Meet our speakers at DevFest Raipur 2025: industry leaders, open source contributors, and community builders sharing their expertise on cutting-edge technologies.",
+      "keywords": "DevFest Speakers, Tech Speakers, Developer Advocates, GDG Speakers, Technology Leaders",
+      "ogImage": "/images/og-speakers.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    "team": {
+      "title": "Team - DevFest Raipur 2025",
+      "description": "Meet the dedicated team behind DevFest Raipur 2025, working tirelessly to create an amazing experience for developers and tech enthusiasts.",
+      "keywords": "DevFest Team, GDG Raipur Team, Event Organizers, Community Leaders",
+      "ogImage": "/images/og-team.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    "hackathon": {
+      "title": "Hackathon - DevFest Raipur 2025",
+      "description": "Participate in the DevFest Raipur 2025 Hackathon. Build innovative solutions, collaborate with talented developers, and win exciting prizes.",
+      "keywords": "DevFest Hackathon, Coding Competition, Developer Challenge, Tech Hackathon, GDG Hackathon",
+      "ogImage": "/images/og-hackathon.jpg",
+      "twitterCard": "summary_large_image"
+    }
+  },
+  "mentors": [
+    {
+      "id": 1,
+      "name": "Abhijeet Sharmaa",
+      "title": "Mentor",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/blob_0UxHaiD",
+      "social": {
+        "twitter": "",
+        "instagram": "",
+        "linkedin": ""
+      }
+    },
+    {
+      "id": 2,
+      "name": "Adarsh Sharma",
+      "title": "Mentor",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/blob_8hJZlSg",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 3,
+      "name": "Shaily Toppo",
+      "title": "Mentor",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/blob_vCggjAa",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    }
+  ],
+  "speakers": [
+    {
+      "id": 4,
+      "name": "Biswanath Giri",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/1668754433468.jpeg",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 5,
+      "name": "Saurabh Mishra",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/Saurabh%20Mishra.jpg",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 6,
+      "name": "Abhishek Doshi",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/abhishek-doshi_XdNbdNq.png",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 7,
+      "name": "Ayushi Gupta",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/WhatsApp_Image_2022-06-09_at_12.53.58_PM_1_WBJycb4.jpeg",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 8,
+      "name": "Anubhav Singh",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/AnubhavSitePic2024_2_48YCtMC.png",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 9,
+      "name": "Bhavesh Bhatt",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/Bhavesh_Bhatt.JPG",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 10,
+      "name": "Jitendra Gupta",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/WhatsApp%20Image%202023-02-03%20at%2011.02.36.jpg",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 11,
+      "name": "Vrijraj Singh",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/unnamed_rKOdS1N.png",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 12,
+      "name": "Abhishek Sharma",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/WhatsApp%20Image%202025-09-21%20at%2009.57.30_b79a1002_kgaRPWx.jpg",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 13,
+      "name": "Gaurav Kheterpal",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/1569176790410_apzZ2z4.jpg",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 14,
+      "name": "Karan Gupta",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/blob_DYGt9Qa",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 15,
+      "name": "Nitin Prakash",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/31eca2d1-6344-4965-aa74-b40727aa995d.jpeg",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 16,
+      "name": "Asmita Khuspe",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/blob_7MEYtrz",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 17,
+      "name": "Siddhi Khaire",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/blob_HajTR2v",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 18,
+      "name": "Ganesh Divekar",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/blob_a9u2KFL",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 19,
+      "name": "Mayur Madhani",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/blob_1nqSkio",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 20,
+      "name": "Indranil Chandra",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/Indranil_Chandra.jpg",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 21,
+      "name": "Abhishek Mankuskar",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/blob_HPaKpEz",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 22,
+      "name": "Neel Shah",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/neel-shah_q8enNP4.jpg",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 23,
+      "name": "Vinayak Gavariya",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/images%20%2897%29%20%281%29_9uzFneP.jpeg",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 24,
+      "name": "Bhavik Makwana",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/Bhavik%20Makwana.jpeg",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    },
+    {
+      "id": 25,
+      "name": "Nikita Mourya",
+      "title": "Speaker",
+      "bio": "",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/blob_0IT3Z5g",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "instagram": ""
+      }
+    }
+  ],
+  "team": [
+    {
+      "id": 1,
+      "name": "Kuldeep Pisda",
+      "role": "Organizer",
+      "bio": "Lead Organizer of DevFest Raipur 2025",
+      "image": "/images/team/kuldeep.jpg",
+      "social": {
+        "twitter": "",
+        "instagram": "",
+        "linkedin": ""
+      }
+    },
+    {
+      "id": 2,
+      "name": "Mohammad Yasin",
+      "role": "Organizer",
+      "bio": "Co-Organizer of DevFest Raipur 2025",
+      "image": "/images/team/yasin.jpg",
+      "social": {
+        "twitter": "",
+        "instagram": "",
+        "linkedin": ""
+      }
+    }
+  ]
+}

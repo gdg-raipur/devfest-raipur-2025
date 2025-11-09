@@ -1,10 +1,11 @@
-"use client"; 
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import Button from './Button';
 
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 import Link from 'next/link';
+import eventData from "@/data/event.json"
 
 
 interface SocialLink {
@@ -16,7 +17,7 @@ interface SocialLink {
 const ContactSection: React.FC = () => {
   const socialLinks: SocialLink[] = [
     {
-      href: "",
+      href: eventData.event.social.twitter,
       label: "Twitter",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" className="sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 16 16">
@@ -25,7 +26,7 @@ const ContactSection: React.FC = () => {
       )
     },
     {
-      href: "",
+      href: eventData.event.social.linkedin,
       label: "LinkedIn",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" className="sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 16 16">
@@ -34,16 +35,7 @@ const ContactSection: React.FC = () => {
       )
     },
     {
-      href: "",
-      label: "GitHub",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" className="sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-        </svg>
-      )
-    },
-    {
-      href: "",
+      href: eventData.event.social.instagram,
       label: "Instagram",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" className="sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 16 16">
@@ -72,11 +64,9 @@ const ContactSection: React.FC = () => {
                 size="lg"
                 className="mt-2 sm:mt-4 text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3 border-1 border-green-950"
                 onClick={() => {
-                  if (process.env.NEXT_PUBLIC_VOLUNTEER_FORM_URL) {
-                    window.open(process.env.NEXT_PUBLIC_VOLUNTEER_FORM_URL, '_blank', 'noopener,noreferrer');
-                  }
+                  window.open('https://konfhub.com/devfest-raipur-2025?utm_source=website&utm_medium=cta&utm_campaign=devfest-raipur-2025&utm_content=footer-ticket', '_blank', 'noopener,noreferrer');
                 }}
-                
+
               >
                 Book Your Ticket Now !
                 <span className="text-xl sm:text-2xl transition-transform duration-300 group-hover:translate-x-1">
@@ -85,11 +75,24 @@ const ContactSection: React.FC = () => {
               </Button>
               
               <div>
+                {/* Contact Information */}
+                <div className="pt-6 sm:pt-8">
+                  <h3 className="text-2xl sm:text-xl text-gray-700 text-left mb-2 font-bold">Contact Us</h3>
+                  <div className="flex flex-col gap-1 text-sm sm:text-base text-gray-700">
+                    <a href="mailto:kuldeep@gdgraipur.in" className="hover:text-[#205c4b] transition-colors">
+                      kuldeep@gdgraipur.in
+                    </a>
+                    <a href="tel:+917987162852" className="hover:text-[#205c4b] transition-colors">
+                      +91 798 716 2852
+                    </a>
+                  </div>
+                </div>
+
                 {/* Connect with us text */}
-                <div className="pt-6 sm:pt-10">
+                <div className="pt-4 sm:pt-6">
                   <h3 className="text-2xl sm:text-xl text-gray-700 text-left mb-3 font-bold">Connect Us on</h3>
                 </div>
-                
+
                 {/* Social Media Links */}
                 <div className="flex gap-3 sm:gap-4 mt-2 sm:mt-0">
                   {socialLinks.map((link) => (
