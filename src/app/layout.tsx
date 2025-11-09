@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
+import Script from "next/script";
 
 
 // const geistSans = Geist({
@@ -29,6 +30,20 @@ export default function RootLayout({
       <body
         className={`font-sans antialiased top-0`}
       >
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-5R8YBJGJ0H"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5R8YBJGJ0H');
+          `}
+        </Script>
+
         {/* <Navbar /> */}
         {children}
         <Footer />
