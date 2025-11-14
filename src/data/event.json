@@ -374,5 +374,19 @@
         "linkedin": ""
       }
     }
+  ],
+  "communityPartners": [
+    {
+      "id": 1,
+      "name": "CodeChef IIITNayaRaipur",
+      "image": "",
+      "linkedin": "https://www.codechef.com/colleges/IIITNayaRaipur"
+    },
+    {
+      "id": 2,
+      "name": "Technozion IIITNayaRaipur",
+      "image": "",
+      "linkedin": "https://technozion.org/"
+    }
   ]
 }
